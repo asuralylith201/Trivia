@@ -6,7 +6,6 @@ public class Player
 		{
 		askName();
 		rulesChoice();
-		categoryChoice();
 		}
 	public static void askName()
 		{
@@ -36,18 +35,4 @@ public class Player
 			System.out.println("Good that, let's begin!");
 			}
 		}
-	public static void categoryChoice()
-		{
-		System.out.println("  _______________________________________________");
-		Scanner userInput = new Scanner(System.in);
-		System.out.println("  What category do you want?");
-		System.out.println("  (1) Science");
-		System.out.println("  (2) General");
-		System.out.println("  (3) History");
-		System.out.println("  (4) Media");
-		System.out.println("  (5) Random" );
-		
-		int category = userInput.nextInt();
-		}
-
-}
+	}
