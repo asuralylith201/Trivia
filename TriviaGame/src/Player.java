@@ -27,7 +27,7 @@ public class Player
 			System.out.println("  * There are five categories to choose from ");
 			System.out.println("  * Science, General, History, Media, and Random.");
 			System.out.println("  * You will be given a point for each question answered correctly");
-			System.out.println("  * The game will end once you have answered three incorrectly");
+			System.out.println("  * The game will end once you have answered one incorrectly");
 			System.out.println("  * Good Luck!");
 			}
 		else if (choice.equals ("no") || choice.equals ("No"))
