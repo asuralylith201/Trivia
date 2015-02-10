@@ -24,8 +24,8 @@ public class Player
 		if (choice.equals ("yes") || choice.equals ("Yes"))
 			{
 			System.out.println("Alrighty then, here they are: ");
-			System.out.println("  * There are five categories to choose from ");
-			System.out.println("  * Science, General, History, Media, and Random.");
+			System.out.println("  * You will be given a random question on a card from 1 of 5 categories");
+			System.out.println("  * Science, General, History, Media, and Culture.");
 			System.out.println("  * You will be given a point for each question answered correctly");
 			System.out.println("  * The game will end once you have answered one incorrectly");
 			System.out.println("  * Good Luck!");

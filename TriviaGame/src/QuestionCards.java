@@ -4,8 +4,10 @@ public class QuestionCards
 	{
 	String category;
 	String question;  
-	int answer;
+	static int answer;
 	String choices;
+	static int qAnswer;
+	static int randomNumber;
 	static ArrayList<QuestionCards> choice = new ArrayList<QuestionCards>();
 	public QuestionCards (String ct, String qu, String ch, int a)
 		{
@@ -18,6 +20,7 @@ public class QuestionCards
 		{
 		instantiateArray();
 		displayCategoriesAndChoice();
+		checkForWonGame();
 		}
 	public static void instantiateArray()
 		{
@@ -40,13 +43,8 @@ public class QuestionCards
 	public static void displayCategoriesAndChoice()
 		{
 		Scanner userInput = new Scanner(System.in);
-		System.out.println("Which category do you want?");
-		System.out.println("  (1) Science");
-		System.out.println("  (2) General");
-		System.out.println("  (3) History");
-		System.out.println("  (4) Media");
-		System.out.println("  (5) Culture");
-		
+		System.out.println("To begin, draw a card by typing 'draw'. ");
+		int randomNumber = (int) (Math.random() * 5) + 1;
 		int selection = userInput.nextInt();
 		if (selection == 1)
 			{
@@ -58,15 +56,24 @@ public class QuestionCards
 				int qAnswer = userInput.nextInt();
 				}
 			int qAnswer = 0;
-			if (qAnswer == 1)
+			}
+		else if (selection == 2)
+			{
+			System.out.println("You have chosen the General category!");
+			for ()
+			}
+		}
+	public static void checkForWonGame()
+		{
+		if (qAnswer == (answer))
 				{
 				System.out.println("Very good, you have gotten a point!");
 				}
 			else
 				{
 				System.out.println("Wrong! End Game.");
+				System.exit(0);
 				}
-			}
 		}
 	public String getCategory() 
 		{
